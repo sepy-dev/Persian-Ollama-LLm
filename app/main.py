@@ -406,7 +406,7 @@ CHAT_HTML = r"""<!doctype html>
       .system input{min-width:160px}
       .messages{height:58vh}
     }
-  </style>
+</style>
 </head>
 <body>
   <div class="app">
@@ -414,7 +414,11 @@ CHAT_HTML = r"""<!doctype html>
       <div style="width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#1e293b,#0ea5a9);display:flex;align-items:center;justify-content:center;font-weight:700">QW</div>
       <div>
         <h1>چت با qwen2.5-coder</h1>
-        <div class="meta">سرور Ollama: <code>""" + OLLAMA_BASE + """</code> · ترجمه محلی: <code>quickmt-fa-en</code></div>
+        <div class="meta">
+          سرور Ollama: <code>""" + OLLAMA_BASE + """</code> · ترجمه محلی: <code>quickmt-fa-en</code><br>
+          GitHub: <a href="https://github.com/sepehr.ramzany" style="color:#4f46e5" target="_blank">sepehr.ramzany</a> ·
+          Twitter/X: <a href="https://twitter.com/sepy_dev" style="color:#4f46e5" target="_blank">@sepy_dev</a>
+        </div>
       </div>
     </header>
 
@@ -617,3 +621,4 @@ CHAT_HTML = r"""<!doctype html>
 if __name__ == '__main__':
     import uvicorn
     uvicorn.run('main:app', host='0.0.0.0', port=8000, reload=False)
+
