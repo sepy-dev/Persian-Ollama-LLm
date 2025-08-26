@@ -1,87 +1,113 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Razor-AI Documentation</title>
-<style>
-  body { font-family: 'Courier New', Courier, monospace; background: #0f1724; color: #e6eef8; margin:0; padding:0;}
-  .container { max-width: 1000px; margin:auto; padding:20px; }
-  h1, h2, h3 { color:#4f46e5; }
-  p { line-height:1.6; }
-  .badge { display:inline-block; padding:4px 10px; margin:2px; border-radius:6px; font-size:12px; font-weight:bold; color:white; }
-  .badge.python { background:#3776AB; }
-  .badge.fastapi { background:#009688; }
-  .badge.docker { background:#2496ED; }
-  .badge.ollama { background:#999; }
-  .section { background:#0b1220; padding:15px; border-radius:12px; margin-bottom:20px; }
-  .img-box { text-align:center; margin:20px 0; }
-  img { max-width:90%; border-radius:12px; border:2px solid #4f46e5; }
-  .config { background:#1e293b; padding:12px; border-radius:12px; margin:10px 0; font-size:14px; }
-</style>
-</head>
-<body>
-<div class="container">
-  <h1>📘 Razor-AI Documentation</h1>
+## 🏷️ Badges
+![Python](https://img.shields.io/badge/python-3.12-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100-green)
+![Docker](https://img.shields.io/badge/Docker-24.0-blue)
+![Ollama](https://img.shields.io/badge/Ollama-latest-lightgrey)
+![CTranslate2](https://img.shields.io/badge/CTranslate2-2.15-darkblue)
+![SentencePiece](https://img.shields.io/badge/SentencePiece-0.1-darkred)
+![Status](https://img.shields.io/badge/status-MVP%20/Testing-yellow)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-  <div class="section">
-    <h2>🏷️ Badges</h2>
-    <span class="badge python">Python 3.12</span>
-    <span class="badge fastapi">FastAPI 0.100</span>
-    <span class="badge docker">Docker 24.0</span>
-    <span class="badge ollama">Ollama latest</span>
-    <span class="badge">Status: MVP/Testing</span>
-    <span class="badge">License: MIT</span>
-  </div>
+---
 
-  <div class="img-box">
-    <h2>🖼️ تصاویر پروژه</h2>
-    <img src="https://via.placeholder.com/900x400?text=Razor-AI+Project+Overview" alt="Project Overview">
-    <img src="https://via.placeholder.com/400x200?text=Translation+Toggle" alt="Translation Option">
-  </div>
+## 🖼️ تصاویر
 
-  <div class="section">
-    <h2>⚡ هدف پروژه</h2>
-    <p>هدف Razor-AI فراهم کردن بهترین تجربه برای استفاده از مدل‌های Ollama با **ورودی فارسی** است. متن‌ها با مدل <strong>quickmt-fa-en</strong> آفلاین ترجمه می‌شوند و بلوک‌های کد حفظ می‌شوند.</p>
-    <ul>
-      <li>ترجمه آفلاین Fa → En</li>
-      <li>حفظ بلوک‌ها و inline code</li>
-      <li>UI زیبا و قابل کپی کردن کد</li>
-      <li>پشتیبانی GPU برای Ollama</li>
-      <li>تغییر مدل Ollama با متغیر <code>OLLAMA_MODEL</code></li>
-    </ul>
-  </div>
+**تصویر کلی پروژه**  
+![Project Overview](assets/1)
 
-  <div class="section">
-    <h2>⚙️ تنظیمات مهم</h2>
-    <p>🔹 <strong>تغییر مدل Ollama:</strong> فقط مقدار زیر را ویرایش کنید:</p>
-    <div class="config">
-      OLLAMA_MODEL=qwen2.5-coder:1.5b
-    </div>
-    <p>🔹 <strong>استفاده از GPU:</strong> اگر GPU دارید و می‌خواهید Ollama روی GPU اجرا شود:</p>
-    <div class="config">
-      docker run --gpus all -e OLLAMA_USE_GPU=1 -p 11434:11434 ollama/ollama:latest
-    </div>
-    <p>اگر GPU موجود نباشد، Ollama روی CPU fallback می‌کند.</p>
-  </div>
+**تصویر مربوط به گزینه‌ی ترجمه**  
+![Translation Option](assets/2)
 
-  <div class="section">
-    <h2>📝 شبکه‌های اجتماعی</h2>
-    <p>Twitter/X: <a href="https://twitter.com/sepy_dev" style="color:#4f46e5">@sepy_dev</a></p>
-    <p>GitHub: <a href="https://github.com/sepehr.ramzany" style="color:#4f46e5">sepehr.ramzany</a></p>
-    <p>Instagram: <a href="https://www.instagram.com/sepehr.ramzany/" style="color:#4f46e5">sepehr.ramzany</a></p>
-    <p>Email: <a href="mailto:sepehr.ramzany@gmail.com" style="color:#4f46e5">sepehr.ramzany@gmail.com</a></p>
-  </div>
+---
 
-  <div class="section">
-    <h2>🇬🇧 English Summary</h2>
-    <p>Razor-AI is a local interface to improve Persian input with Ollama models. Persian text is translated offline using <strong>quickmt-fa-en</strong>, code blocks are preserved, then sent to Ollama. Docker + GPU ready.</p>
-    <p><strong>Quick Start:</strong> clone repo & docker compose up</p>
-    <p><strong>Change Ollama model:</strong> <code>OLLAMA_MODEL=qwen2.5-coder:1.5b</code></p>
-    <p><strong>GPU Notes:</strong> Use <code>docker run --gpus all ...</code> for GPU, fallback to CPU if unavailable.</p>
-  </div>
+## ⚡ خلاصه (فارسی)
 
-</div>
-</body>
-</html>
+Razor-AI یک لایه واسط برای **ارتباط بهتر مدل‌های Ollama با ورودی فارسی** است. متن فارسی به صورت آفلاین با مدل **quickmt-fa-en** ترجمه می‌شود، بلوک‌های کد و `inline code` حفظ می‌شوند، سپس به Ollama فرستاده می‌شوند.  
+
+قابلیت‌ها:
+- ترجمه آفلاین Fa → En با **CTranslate2**
+- حفظ بلوک‌های کد (` ```...``` `) و inline code
+- UI زیبا با قابلیت **کپی بلوک کد**
+- دانلود خودکار مدل ترجمه اگر موجود نباشد
+- پشتیبانی GPU برای Ollama
+- تغییر مدل Ollama با ویرایش `OLLAMA_MODEL`
+
+
+
+## 🚀 راه‌اندازی سریع با Docker
+
+```bash
+# ساخت و اجرای کانتینرها
+docker compose build --no-cache
+docker compose up -d
+```
+### مرورگر را باز کنید
+open http://localhost:8000
+تغییر مدل Ollama
+yaml
+Copy code
+```
+# docker-compose.yml
+environment:
+  - OLLAMA_MODEL=qwen2.5-coder:1.5b #اینو تغییر بده
+```
+
+
+```bash
+Copy code
+# کلون کردن repo quickmt
+git clone https://github.com/quickmt/quickmt.git
+```
+
+
+# دانلود مدل فارسی → انگلیسی
+quickmt-model-download quickmt/quickmt-fa-en ./quickmt-fa-en
+🖥️ GPU
+نصب NVIDIA driver + nvidia-container-toolkit
+
+اجرای Ollama با GPU:
+
+bash
+Copy code
+docker run --gpus all -e OLLAMA_USE_GPU=1 -p 11434:11434 ollama/ollama:latest
+اگر GPU موجود نباشد، Ollama روی CPU fallback می‌کند.
+
+🧩 الگوریتم ترجمه امن
+متن را به بخش‌های کد و متن عادی تقسیم کن (regex برای ...).
+
+بخش‌های متن عادی را به quickmt-fa-en بده.
+
+بلوک‌های کد و inline code دست نخورده باقی بمانند.
+
+خروجی ترجمه شده را به Ollama بفرست.
+
+📝 شبکه‌های اجتماعی
+Twitter/X: @sepy_dev
+
+GitHub: sepehr.ramzany
+
+Instagram: sepehr.ramzany
+
+Email: sepehr.ramzany@gmail.com
+
+🇬🇧 English Summary
+Razor-AI is a local interface to improve Persian input with Ollama models. Persian text is translated offline using quickmt-fa-en (CTranslate2), code blocks are preserved, then sent to Ollama. Docker + GPU ready. Toggle translation per message in the UI.
+
+Quick Start:
+
+bash
+Copy code
+git clone https://github.com/your/repo.git
+docker compose build --no-cache
+docker compose up -d
+open http://localhost:8000
+Change Ollama model: OLLAMA_MODEL=qwen2.5-coder:1.5b
+GPU Notes: Use docker run --gpus all ... for GPU, fallback to CPU if unavailable.
+Model Download: Prefer host download or entrypoint.sh auto-download.
+License: MIT
+
+yaml
+Copy code
+
+
 
