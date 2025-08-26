@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  ollama:
+    image: ollama/ollama:latest   # اگر با Docker Hub مشکل داشتی -> docker.arvancloud.ir/ollama/ollama:latest
+    container_name: ollama
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_USE_GPU=1
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+
+  razor-api:
+    build: .
+    container_name: razor-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    depends_on:
+      - ollama
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    volumes:
+      - ./app:/app   # برای توسعه؛ در production این را بردار یا از یک image بدون mount استفاده کن
+      
+
+volumes:
+  ollama_data:
