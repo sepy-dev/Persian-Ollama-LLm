@@ -15,8 +15,6 @@
 **تصویر کلی پروژه**  
 ![Project Overview](assets/1.png)
 
-**تصویر مربوط به گزینه‌ی ترجمه**  
-![Translation Option](assets/2.png)
 
 ---
 
@@ -26,6 +24,10 @@ Razor-AI یک لایه واسط برای **ارتباط بهتر مدل‌های
 
 قابلیت‌ها:
 - ترجمه آفلاین Fa → En با **CTranslate2**
+
+**تصویر مربوط به گزینه‌ی ترجمه**  
+![Translation Option](assets/2.png)
+
 - حفظ بلوک‌های کد (` ```...``` `) و inline code
 - UI زیبا با قابلیت **کپی بلوک کد**
 - دانلود خودکار مدل ترجمه اگر موجود نباشد
@@ -41,8 +43,12 @@ Razor-AI یک لایه واسط برای **ارتباط بهتر مدل‌های
 docker compose build --no-cache
 docker compose up -d
 ```
-### مرورگر را باز کنید
+---
 open http://localhost:8000
+---
+
+
+![Translation Option](assets/3.png)
 
 ## تغییر مدل Ollama
 
