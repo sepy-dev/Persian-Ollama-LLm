@@ -43,7 +43,9 @@ docker compose up -d
 ```
 ### مرورگر را باز کنید
 open http://localhost:8000
-تغییر مدل Ollama ###
+
+## تغییر مدل Ollama
+
  yaml
 Copy code
 ```
