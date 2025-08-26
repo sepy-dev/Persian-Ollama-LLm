@@ -13,10 +13,10 @@
 ## 🖼️ تصاویر
 
 **تصویر کلی پروژه**  
-![Project Overview](assets/1)
+![Project Overview](assets/1.png)
 
 **تصویر مربوط به گزینه‌ی ترجمه**  
-![Translation Option](assets/2)
+![Translation Option](assets/2.png)
 
 ---
 
