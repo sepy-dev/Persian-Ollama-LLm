@@ -90,11 +90,11 @@ docker run --gpus all -e OLLAMA_USE_GPU=1 -p 11434:11434 ollama/ollama:latest
 خروجی ترجمه شده را به Ollama بفرست.
 
 📝 شبکه‌های اجتماعی
-Twitter/X: @sepy_dev
+[Twitter/X](x.com/sepy_dev)
 
-GitHub: sepehr.ramzany
+GitHub: [sepy](https://github.com/sepy-dev/)
 
-Instagram: sepehr.ramzany
+[Instagram](instagram.com/sepehr.ramzany)
 
 Email: sepehr.ramzany@gmail.com
 
@@ -105,7 +105,7 @@ Quick Start:
 
 bash
 Copy code
-git clone https://github.com/your/repo.git
+git clone [https://github.com/your/repo](https://github.com/sepy-dev/Persian-Ollama-LLm).git
 docker compose build --no-cache
 docker compose up -d
 open http://localhost:8000
