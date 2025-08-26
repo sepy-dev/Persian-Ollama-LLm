@@ -64,7 +64,7 @@ environment:
 
 
 
-# دانلود مدل فارسی → انگلیسی
+# دانلود مدل فارسی → انگلیسی(جدا وگرنه با دکر باشید خودکار شل خودش موقع اجرا دان میکنه)
 quickmt-model-download quickmt/quickmt-fa-en ./quickmt-fa-en
 🖥️ GPU
 نصب NVIDIA driver + nvidia-container-toolkit
