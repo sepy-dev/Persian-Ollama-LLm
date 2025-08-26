@@ -61,11 +61,7 @@ environment:
 ```
 
 
-```bash
-Copy code
-# کلون کردن repo quickmt
-git clone https://github.com/quickmt/quickmt.git
-```
+
 
 
 # دانلود مدل فارسی → انگلیسی
