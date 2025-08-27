@@ -1,12 +1,12 @@
 ## 🏷️ Badges
-![Python](https://img.shields.io/badge/python-3.12-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.100-green)
-![Docker](https://img.shields.io/badge/Docker-24.0-blue)
-![Ollama](https://img.shields.io/badge/Ollama-latest-lightgrey)
-![CTranslate2](https://img.shields.io/badge/CTranslate2-2.15-darkblue)
-![SentencePiece](https://img.shields.io/badge/SentencePiece-0.1-darkred)
-![Status](https://img.shields.io/badge/status-MVP%20/Testing-yellow)
-![License](https://img.shields.io/badge/license-MIT-lightgrey)
+[![Python](https://img.shields.io/badge/python-3.12-blue)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.100-green)](https://github.com/tiangolo/fastapi)
+[![Docker](https://img.shields.io/badge/Docker-24.0-blue)](https://www.docker.com/)
+[![Ollama](https://img.shields.io/badge/Ollama-latest-lightgrey)](https://github.com/ollama/ollama)
+[![CTranslate2](https://img.shields.io/badge/CTranslate2-2.15-darkblue)](https://github.com/OpenNMT/CTranslate2)
+[![SentencePiece](https://img.shields.io/badge/SentencePiece-0.1-darkred)](https://github.com/google/sentencepiece)
+[![Status](https://img.shields.io/badge/status-MVP%20/Testing-yellow)](https://github.com/your-username/your-repo)  
+[![License](https://img.shields.io/badge/license-MIT-lightgrey)](https://opensource.org/licenses/MIT)
 
 ---
 
@@ -18,7 +18,7 @@
 
 ---
 
-## ⚡ خلاصه (فارسی)
+## ⚡ چیکار می‌کنه ؟؟ (فارسی)
 
 Razor-AI یک لایه واسط برای **ارتباط بهتر مدل‌های Ollama با ورودی فارسی** است. متن فارسی به صورت آفلاین با مدل **quickmt-fa-en** ترجمه می‌شود، بلوک‌های کد و `inline code` حفظ می‌شوند، سپس به Ollama فرستاده می‌شوند.  
 
@@ -95,23 +95,21 @@ GitHub: [sepy](https://github.com/sepy-dev/)
 Email: sepehr.ramzany@gmail.com
 
 🇬🇧 English Summary
-Razor-AI is a local interface to improve Persian input with Ollama models. Persian text is translated offline using quickmt-fa-en (CTranslate2), code blocks are preserved, then sent to Ollama. Docker + GPU ready. Toggle translation per message in the UI.
+Persian Ollama is a local interface to improve Persian input with Ollama models. Persian text is translated offline using quickmt-fa-en (CTranslate2), code blocks are preserved, then sent to Ollama. Docker + GPU ready. Toggle translation per message in the UI.
 
 Quick Start:
 
-bash
+
 Copy code
+```
 git clone [https://github.com/your/repo](https://github.com/sepy-dev/Persian-Ollama-LLm).git
 docker compose build --no-cache
 docker compose up -d
+```
 open http://localhost:8000
 Change Ollama model: OLLAMA_MODEL=qwen2.5-coder:1.5b
 GPU Notes: Use docker run --gpus all ... for GPU, fallback to CPU if unavailable.
 Model Download: Prefer host download or entrypoint.sh auto-download.
-License: MIT
-
-yaml
-Copy code
-
+License: MIt
 
 
